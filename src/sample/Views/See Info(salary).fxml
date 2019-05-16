@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlles.Controller">
+   <children>
+      <Button fx:id="btn_back_fromInfo" layoutX="1110.0" layoutY="648.0" mnemonicParsing="false" onAction="#Back_to_admin" text="Back to Admin Menu" />
+      <TableView fx:id="Tteachers" layoutX="633.0" layoutY="14.0" prefHeight="200.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="personally_code" prefWidth="89.0" text="Personal Id" />
+          <TableColumn fx:id="name" prefWidth="61.0" text="Name" />
+            <TableColumn fx:id="lname" prefWidth="84.0" text="Last Name" />
+            <TableColumn fx:id="register_time" prefWidth="66.0" text="Register" />
+            <TableColumn fx:id="main_salary" prefWidth="94.0" text="Main salary" />
+            <TableColumn fx:id="CurrentSalary" prefWidth="114.0" text="Current salary" />
+            <TableColumn fx:id="teacher_degree" prefWidth="59.0" text="Degree" />
+            <TableColumn fx:id="IsManage" prefWidth="85.0" text="IsManage?" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_Show_Info_teacher" layoutX="1146.0" layoutY="238.0" mnemonicParsing="false" onAction="#Show_Info_teacher" text="Show Teacher Info" />
+      <TableView fx:id="TManagers" layoutX="14.0" layoutY="6.0" prefHeight="200.0" prefWidth="574.0">
+         <columns>
+            <TableColumn fx:id="m_personally_code" prefWidth="89.0" text="Personal Id" />
+            <TableColumn fx:id="m_name" prefWidth="61.0" text="Name" />
+            <TableColumn fx:id="m_lname" prefWidth="84.0" text="Last Name" />
+            <TableColumn fx:id="m_register_time" prefWidth="66.0" text="Register" />
+            <TableColumn fx:id="m_main_salary" prefWidth="94.0" text="Main salary" />
+            <TableColumn fx:id="m_CurrentSalary" prefWidth="114.0" text="Current salary" />
+            <TableColumn fx:id="m_section" prefWidth="59.0" text="Section" />
+         </columns>
+      </TableView>
+      <Button fx:id="btn_Show_Info_manager" layoutX="429.0" layoutY="238.0" mnemonicParsing="false" onAction="#Show_Info_manager" prefHeight="31.0" prefWidth="159.0" text="show Manager Info" />
+      <TableView fx:id="TEmployees" layoutX="633.0" layoutY="289.0" prefHeight="234.0" prefWidth="653.0">
+        <columns>
+          <TableColumn fx:id="e_personally_code" prefWidth="75.0" text="Person Id" />
+          <TableColumn fx:id="e_name" prefWidth="53.0" text="Name" />
+            <TableColumn fx:id="e_lname" prefWidth="82.0" text="Last Name" />
+            <TableColumn fx:id="e_register_time" prefWidth="66.0" text="Register" />
+            <TableColumn fx:id="e_main_salary" prefWidth="88.0" text="Main salary" />
+            <TableColumn fx:id="e_CurrentSalary" prefWidth="109.0" text="Current salary" />
+            <TableColumn fx:id="e_section" prefWidth="60.0" text="Section" />
+            <TableColumn fx:id="e_hours_in_week" prefWidth="115.0" text="Hours in week" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_Show_Info_employee" layoutX="1129.0" layoutY="546.0" mnemonicParsing="false" onAction="#Show_Info_employee" prefHeight="31.0" prefWidth="140.0" text="Show Employee Info" />
+   </children>
+</AnchorPane>
